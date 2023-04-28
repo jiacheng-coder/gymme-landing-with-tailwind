@@ -27,8 +27,8 @@ const Header = () => {
     <Nav />
     {/* btns - initially hidden - show on desktop */}
     <div className='hidden lg:flex space-x-4'>
-      <button>{btnLoginText}</button>
-      <button>{btnSignupText}</button>
+      <button className='btn btn-sm text-white hover:text-primary-200 transition'>{btnLoginText}</button>
+      <button className='btn btn-sm btn-primary'>{btnSignupText}</button>
     </div>
     {/* nav menu btn - hide on desktop */}
     <div className='lg:hidden absolute right-4 cursor-pointer' onClick={()=>setNavMobile(!navMobile)}>
